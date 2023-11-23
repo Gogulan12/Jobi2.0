@@ -1,0 +1,172 @@
+.backgroundnavContainer {
+  background-color: #244034;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  max-width: 1200px;
+  /* margin: 20px 0px; */
+  padding: 20px 0px;
+  background-color: #244034;
+  font-family: "EB Garamond", serif;
+}
+
+nav {
+  z-index: 10;
+  position: relative;
+  background-color: #244034;
+  margin: 0px;
+  width: 100%;
+}
+
+.navigationLinks {
+  display: flex;
+  margin: 20px 20px 20px 60px;
+  margin: 0px auto;
+  gap: 10px;
+  gap: 9rem;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 30px; */
+  padding-bottom: 0;
+  font-family: "EB Garamond", serif;
+}
+
+.pagelinks {
+  display: flex;
+}
+
+.accountlinks {
+  margin: 0 20px;
+}
+
+.navigationLinks a {
+  color: #fff;
+  padding: 4px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  width: 100px;
+  font-family: "EB Garamond", serif;
+}
+
+.navigationLinks a.active {
+  color: green;
+  /* background: #333; */
+  text-decoration: none;
+}
+.navigationLinks .register {
+  background-color: green;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navigationLinks a.active.register {
+  color: white;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  color: #333;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navContainer {
+    padding: 0px 0px;
+  }
+  .hamburger-button {
+    display: block;
+    width: 81px;
+    height: 81px;
+    color: white;
+  }
+  .hamburger-button.open {
+    transition: 0.5s ease-in-out;
+    background-color: grey;
+  }
+
+  .hamburger-button.open svg {
+    color: white;
+  }
+
+  /* Navigation links container */
+  .navigationLinks {
+    /* position: fixed; */
+    position: absolute;
+    top: -100%; /* Initially off-screen */
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    /* width: 100%; */
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    transition: top 0.5s ease-in-out;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Add the 'open' class to show the menu */
+  .navigationLinks.open {
+    /* top: 0; */
+    top: 81px;
+    /* width: 100%; */
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    background-color: grey;
+    gap: 3rem;
+  }
+
+  .navigationLinks.open .pagelinks {
+    flex-direction: column;
+  }
+
+  .pagelinks {
+    /* text-align: center; */
+    align-items: center;
+  }
+
+  .accountlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigationLinks.open a {
+    z-index: 0;
+    color: white;
+  }
+
+  /* Navigation link styles */
+  .navigationLinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 10px;
+    transition: color 0.5s ease;
+    z-index: 0;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navigationLinks a:hover {
+    color: greenyellow; /* Change color on hover */
+  }
+}
