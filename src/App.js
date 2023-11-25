@@ -13,12 +13,22 @@ import Contact from "./Pages/ContactUs";
 import Jobboard from "./Pages/JobBoard";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Blog from "./Pages/Blog";
+import Error404 from "./Pages/Error404";
+import UnderConstruction from "./Pages/UnderConstruction";
+import Pricing from "./Pages/Pricing";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -42,15 +52,50 @@ function App() {
                 <NavLink exact to="/" onClick={toggleMenu}>
                   Home
                 </NavLink>
-                <NavLink to="/contact" onClick={toggleMenu}>
-                  Contact
+                <NavLink to="/jobboard" onClick={toggleMenu}>
+                  Job Board
                 </NavLink>
                 <NavLink to="/about" onClick={toggleMenu}>
                   About
                 </NavLink>
-                <NavLink to="/jobboard" onClick={toggleMenu}>
-                  Job Board
+                <NavLink to="/contact" onClick={toggleMenu}>
+                  Contact
                 </NavLink>
+                {/* <div class="dropdown">
+                  <button class="dropbtn">
+                    <p>Pages</p>
+                    <i class="arrow down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <NavLink to="/">Link 1</NavLink>
+                    <NavLink to="/">Link 2</NavLink>
+                    <NavLink to="/">Link 3</NavLink>
+                  </div>
+                </div> */}
+                <div className="dropdown">
+                  <button className="dropbtn" onClick={toggleDropdown}>
+                    <p>Pages</p>
+                    <i className="arrow down"></i>
+                  </button>
+                  <div
+                    className={`dropdown-content ${
+                      isDropdownOpen ? "show" : ""
+                    }`}
+                  >
+                    <NavLink to="/pricing" onClick={toggleDropdown}>
+                      Pricing
+                    </NavLink>
+                    <NavLink to="/error" onClick={toggleDropdown}>
+                      404 Error
+                    </NavLink>
+                    <NavLink to="/blog" onClick={toggleDropdown}>
+                      Blog
+                    </NavLink>
+                    <NavLink to="/construction" onClick={toggleDropdown}>
+                      Construction
+                    </NavLink>
+                  </div>
+                </div>
               </div>
               <div className="accountlinks">
                 <NavLink to="/login" onClick={toggleMenu}>
@@ -86,6 +131,18 @@ function App() {
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/error">
+            <Error404 />
+          </Route>
+          <Route path="/construction">
+            <UnderConstruction />
+          </Route>
+          <Route path="/pricing">
+            <Pricing />
           </Route>
         </Switch>
       </BrowserRouter>

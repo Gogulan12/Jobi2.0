@@ -8,7 +8,7 @@ export default function AboutUs() {
       <div className="about-page">
         <div className="AboutHeader">
           <div className="AboutHeadercontent">
-            <h2>About Jobi</h2>
+            <h2>About jobi</h2>
             <p>
               Jobi is not just a job search website; it's a comprehensive
               platform dedicated to transforming the job hunting experience.

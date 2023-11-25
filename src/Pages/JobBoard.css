@@ -1,0 +1,134 @@
+.JobBoardContainer {
+  background-color: #244034;
+  padding: 100px 0 50px;
+  color: white;
+}
+
+.JobBoardContainer h2 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.JobBoardForm {
+  margin: 50px 0;
+}
+
+.fullSearchBar {
+  display: flex;
+  justify-content: center;
+}
+
+.fullInput {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  /* border: 2px solid blue; */
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.fullInput input {
+  outline: none;
+  border: none;
+  display: block;
+  line-height: 1.2em;
+  font-size: 14px;
+}
+
+.fullInput label {
+  display: block;
+  font-size: 12px;
+  color: lightgray;
+  padding-bottom: 5px;
+}
+
+.fullInputCategory {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  /* border: 2px solid blue; */
+  border: none;
+  /* border-radius: 0px 10px; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* width: 250px; */
+}
+
+.fullInputCategory select {
+  outline: none;
+  border: none;
+  display: block;
+  line-height: 1.2em;
+  font-size: 14px;
+  width: 250px;
+}
+
+.fullInputCategory label {
+  display: block;
+  font-size: 12px;
+  color: lightgray;
+  padding-bottom: 5px;
+}
+
+.fullInputCategoryContainer {
+  border-left: 1px solid lightgray;
+  padding-left: 20px;
+}
+
+.fullSearchBar button {
+  padding: 25px 30px;
+  border: none;
+  background-color: #d2f34c;
+  font-size: 12px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* filter section */
+
+.filter-container {
+  /* margin-bottom: 20px; */
+  margin: 50px auto 0;
+  max-width: 1200px;
+  /* width: 100%; */
+}
+
+.filter-container button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+}
+
+.filter-container button p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.filter-button {
+  padding: 10px;
+  background-color: #eff6f3;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-content {
+  /* margin-top: 10px; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 20px 20px;
+  border: none;
+  background-color: #eff6f3;
+}
+.filter-content-info {
+  border-top: 1px solid lightgrey;
+  width: 95%;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+}

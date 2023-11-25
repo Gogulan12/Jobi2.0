@@ -1,0 +1,76 @@
+/* RegistrationPage.css */
+
+.registration-page {
+  /* font-family: "Arial", sans-serif; */
+  /* background-color: #f5f5f5; */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  padding: 100px 0;
+  margin: 0;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.registration-subtitle {
+  font-size: 1.2em;
+}
+
+.registration-form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.registration-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.registration-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.registration-button {
+  background-color: #28a745; /* Bootstrap's success color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-link-text {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link-text:hover {
+  text-decoration: underline;
+}
