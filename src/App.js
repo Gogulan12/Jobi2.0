@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
-import logo from "./Logo.svg";
+import logo from "./Assets/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Components/HamburgerMenu.css";
