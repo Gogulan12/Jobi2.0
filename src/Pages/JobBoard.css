@@ -132,3 +132,83 @@
   margin: 0 auto;
   padding: 50px 0 50px;
 }
+
+/* //////////////////////Filter Section///////////////// */
+
+.filterJobView {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.filterOption {
+  display: flex;
+  /* flex-direction: ; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.displayfilter {
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+/* //////////////////////Individual Post///////////////// */
+
+.jobPostings {
+  padding-bottom: 150px;
+}
+
+.jobPostings ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.jobPostings ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.IndividJob {
+  display: flex;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.jobTitle {
+  width: 150px;
+}
+
+.IndividJob p {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.companyImage {
+  width: 50px;
+  height: 50px;
+}
+
+.ApplyandBookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.apply {
+  padding: 10px 40px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}

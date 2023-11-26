@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Pricing.css";
+import Footer from "../Components/Footer";
 export default function Pricing() {
   return (
     <div>
@@ -40,6 +41,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -25,6 +25,7 @@ import create from "../Assets/HowItWorksImgs/CreateIcon.svg";
 import profile from "../Assets/HowItWorksImgs/ProfileIcon.svg";
 import apply from "../Assets/HowItWorksImgs/ApplyIcon.svg";
 import howitworksarrow from "../Assets/HowItWorksImgs/HowitWorksArrow.svg";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   const [isActive1, setActive1] = useState("false");
@@ -384,6 +385,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

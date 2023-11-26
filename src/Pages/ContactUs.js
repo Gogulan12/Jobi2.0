@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import Footer from "../Components/Footer";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -98,6 +99,7 @@ export default function ContactUs() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

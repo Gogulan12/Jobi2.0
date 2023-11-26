@@ -4,7 +4,12 @@ import "./JobBoard.css";
 
 import downarrow from "../Assets/dropdownArrow.svg";
 
+import filter from "../Assets/filterGrid.svg";
+import TDLogo from "../Assets/tdLogo.svg";
+import bookmark from "../Assets/Bookmark.svg";
+
 import { useHistory } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 export default function JobBoard() {
   const [term, setTerm] = useState("");
@@ -135,10 +140,227 @@ export default function JobBoard() {
         <p>
           All <strong>7096</strong> jobs found
         </p>
-        <div>
-          <h4>Short:</h4>
+        <div className="filterOption">
+          <label for="displayfilter">Select:</label>
+
+          <select
+            name="displayfilter"
+            id="displayfilter"
+            className="displayfilter"
+          >
+            <option value="Latest">Latest</option>
+            <option value="Oldest">Oldest</option>
+            <option value="Relevant">Relevant</option>
+          </select>
+          <img src={filter} alt="" />
         </div>
       </div>
+
+      <div className="jobPostings">
+        <ul>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="IndividJob">
+              <img src={TDLogo} alt="" className="companyImage" />
+              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <div className="contractType">
+                <p>Fulltime</p>
+                <p>30-50/hour . Intermediate</p>
+              </div>
+              <div className="jobLocation">
+                <p>Spain, Bercelona</p>
+                <p>Developer,Coder,Design</p>
+              </div>
+              <div className="ApplyandBookmark">
+                <img src={bookmark} alt="" />
+                <a href="/" className="apply">
+                  Apply
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <Footer />
     </div>
   );
 }

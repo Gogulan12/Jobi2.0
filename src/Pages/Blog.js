@@ -8,6 +8,7 @@ import interview from "../Assets/Blogs/Interview.jpg";
 import remote from "../Assets/Blogs/RemoteWork.png";
 import skills from "../Assets/Blogs/Skills.jpg";
 import networking from "../Assets/Blogs/Networking.png";
+import Footer from "../Components/Footer";
 
 export default function Blog() {
   return (
@@ -111,6 +112,7 @@ export default function Blog() {
           <a href="/">Read More</a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
