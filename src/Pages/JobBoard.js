@@ -172,7 +172,7 @@ export default function JobBoard() {
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>

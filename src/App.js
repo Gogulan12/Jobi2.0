@@ -17,6 +17,7 @@ import Blog from "./Pages/Blog";
 import Error404 from "./Pages/Error404";
 import UnderConstruction from "./Pages/UnderConstruction";
 import Pricing from "./Pages/Pricing";
+import JobDetail from "./Pages/JobDetail";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -123,8 +124,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/jobboard">
+          <Route exact path="/jobboard">
             <Jobboard />
+          </Route>
+          <Route path="/jobboard/jobdetail">
+            <JobDetail />
           </Route>
           <Route path="/login">
             <Login />

@@ -1,0 +1,107 @@
+.jobDetailContainer {
+  background-color: #244034;
+}
+
+.JobDetailHeader h2 {
+  font-size: 4rem;
+  color: white;
+  /* padding: 0; */
+  margin: 0;
+  padding: 100px 0px 30px;
+}
+
+.JobDetailHeader h4 {
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.contentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contentContainer .detailLeft {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.detailRight {
+  background-color: #eff6f3;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.rightMainInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.rightMainInfo h6,
+.rightMainInfo p {
+  margin: 10px;
+  /* margin-top: 5px; */
+  /* padding: 0; */
+}
+
+.rightMainInfo p {
+  margin-top: 0;
+}
+
+.outerContainerforDetailImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerforDetailImage {
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50%; */
+}
+
+.containerforDetailImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.VisitButtonLink {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.VisitButtonLink p {
+  background-color: #244034;
+  width: max-content;
+  /* justify-self: unset; */
+  text-align: center;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-family: inherit;
+}
+
+.applyButtonForJobPost {
+  text-decoration: none;
+  /* text-align: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.applyButtonForJobPost p {
+  background-color: #d2f34c;
+  /* width: max-content; */
+  /* justify-self: unset; */
+  text-align: center;
+  color: black;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-family: inherit;
+}

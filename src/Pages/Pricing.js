@@ -15,30 +15,76 @@ export default function Pricing() {
           </p>
         </div>
       </div>
-      <div className="pricingContainer">
-        <div className="pricing-plans">
-          <div className="plan">
-            <h2>Standard Monthly Plan</h2>
-            <p className="price">$19.99/month</p>
-            <ul>
-              <li>Access to basic features</li>
-              <li>10 job postings per month</li>
-              <li>Email support</li>
-            </ul>
-            <button className="select-button">Select Plan</button>
-          </div>
 
-          <div className="plan premium-plan">
-            <h2>Maximum Exposure Annual Plan</h2>
-            <p className="price">$199.99/year</p>
-            <ul>
-              <li>Access to premium features</li>
-              <li>Unlimited job postings</li>
-              <li>Premium support</li>
-              <li>Featured listings</li>
-            </ul>
-            <button className="select-button">Select Plan</button>
+      <div className="pricing-container">
+        <div className="pricing-column">
+          <h2>Free</h2>
+          <p className="description">
+            Basic features for individuals starting their job search. Access to
+            job listings, email notifications, and essential tools like resume
+            building.
+          </p>
+          <p className="price">
+            <strong>$0</strong> / month
+          </p>
+          <button className="get-started-button">Get Started</button>
+          <ul>
+            <li>Access to basic job listings</li>
+            <li>Email notifications for new job postings</li>
+            <li>Limited customer support</li>
+            <li>Resume building tools</li>
+            <li>Basic job application tracking</li>
+          </ul>
+        </div>
+
+        <div className="pricing-column pricing-column-two">
+          <div className="popularLabel">
+            <span>🌟</span> most popular
           </div>
+          <h2>Pro</h2>
+          <p className="description">
+            Enhanced features for a more advanced job search experience. Access
+            to premium job listings, advanced application tracking, and priority
+            support.
+          </p>
+          <p className="price">
+            <strong>$19.99</strong> / month
+          </p>
+          <button className="get-started-button">Get Started</button>
+          <ul>
+            <li>Access to premium job listings</li>
+            <li>Email and SMS notifications for new job postings</li>
+            <li>Resume review and optimization tools</li>
+            <li>Advanced job application tracking</li>
+            <li>Priority customer support</li>
+            <li>Featured profile for increased visibility</li>
+            <li>Exclusive webinars and career resources</li>
+          </ul>
+        </div>
+
+        <div className="pricing-column">
+          <h2>Enterprise</h2>
+          <p className="description">
+            Tailored for businesses looking to elevate their recruitment
+            process. Access to all job listings, premium support, and advanced
+            analytics and reporting.
+          </p>
+          <p className="price">
+            <strong>Let's talk</strong>
+          </p>
+          <button className="get-started-button">Contact Us</button>
+          <ul>
+            <li>
+              Access to all job listings, including exclusive partnerships
+            </li>
+            <li>Premium customer support with dedicated account manager</li>
+            <li>Advanced analytics and reporting</li>
+            <li>Custom branding and integration options</li>
+            <li>Unlimited job postings</li>
+            <li>Customized onboarding and training</li>
+            <li>Enterprise-grade security features</li>
+            <li>Integration with HR systems</li>
+          </ul>
         </div>
       </div>
       <Footer />
