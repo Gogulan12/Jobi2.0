@@ -163,12 +163,15 @@ export default function JobBoard() {
               <img src={TDLogo} alt="" className="companyImage" />
               <h3 className="jobTitle">Developer & expert in java c++</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Fulltime</p>
+                <div>
+                  <strong className="salary">$30-50/hour</strong> .{" "}
+                  <span className="skill-level">Intermediate</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Spain, Bercelona</p>
+                <p className="skills">Developer,Coder,Design</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
@@ -181,18 +184,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Frontend Developer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Fulltime</p>
+                <div>
+                  <strong className="salary">$40-60k/year</strong> .{" "}
+                  <span className="skill-level">Intermediate</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">San Francisco, CA</p>
+                <p className="skills">React, JavaScript, CSS</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -201,18 +207,23 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Data Scientist</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Part-time</p>
+                <div>
+                  <strong className="salary">$50-80/hour</strong> .{" "}
+                  <span className="skill-level">Expert</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">New York, NY</p>
+                <p className="skills">
+                  Python, Machine Learning, Data Analysis
+                </p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -221,18 +232,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">UX/UI Designer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Contract</p>
+                <div>
+                  <strong className="salary">$35-50/hour</strong> .{" "}
+                  <span className="skill-level">Advanced</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">London, UK</p>
+                <p className="skills">UI/UX Design, Sketch, Figma</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -241,18 +255,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Backend Developer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Fulltime</p>
+                <div>
+                  <strong className="salary">$60-80k/year</strong> .{" "}
+                  <span className="skill-level">Expert</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Berlin, Germany</p>
+                <p className="skills">Node.js, MongoDB, REST API</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -261,18 +278,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Marketing Specialist</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Freelance</p>
+                <div>
+                  <strong className="salary">$25-40/hour</strong> .{" "}
+                  <span className="skill-level">Intermediate</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Paris, France</p>
+                <p className="skills">Digital Marketing, Social Media, SEO</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -281,18 +301,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Product Manager</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Fulltime</p>
+                <div>
+                  <strong className="salary">$80-100k/year</strong> .{" "}
+                  <span className="skill-level">Expert</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">New Delhi, India</p>
+                <p className="skills">Product Management, Agile, Scrum</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -301,18 +324,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Network Engineer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Contract</p>
+                <div>
+                  <strong className="salary">$50-70/hour</strong> .{" "}
+                  <span className="skill-level">Advanced</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Tokyo, Japan</p>
+                <p className="skills">Cisco, Routing, Switching</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -321,18 +347,21 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Content Writer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Part-time</p>
+                <div>
+                  <strong className="salary">$20-30/hour</strong> .{" "}
+                  <span className="skill-level">Intermediate</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Sydney, Australia</p>
+                <p className="skills">Content Writing, SEO, Blogging</p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
@@ -341,18 +370,23 @@ export default function JobBoard() {
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
-              <h3 className="jobTitle">Developer & expert in java c++</h3>
+              <h3 className="jobTitle">Graphic Designer</h3>
               <div className="contractType">
-                <p>Fulltime</p>
-                <p>30-50/hour . Intermediate</p>
+                <p className="job-Type">Freelance</p>
+                <div>
+                  <strong className="salary">$30-50/hour</strong> .{" "}
+                  <span className="skill-level">Intermediate</span>
+                </div>
               </div>
               <div className="jobLocation">
-                <p>Spain, Bercelona</p>
-                <p>Developer,Coder,Design</p>
+                <p className="location">Toronto, Canada</p>
+                <p className="skills">
+                  Adobe Creative Suite, Illustration, Typography
+                </p>
               </div>
               <div className="ApplyandBookmark">
                 <img src={bookmark} alt="" />
-                <a href="/" className="apply">
+                <a href="/jobboard/jobdetail" className="apply">
                   Apply
                 </a>
               </div>
