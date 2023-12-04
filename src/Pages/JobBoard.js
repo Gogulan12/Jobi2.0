@@ -21,11 +21,11 @@ export default function JobBoard() {
     history.push(`/search?q=${term}`);
   };
 
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  const handleClick = (event) => {
-    setIsActive((current) => !current);
-  };
+  // const handleClick = (event) => {
+  //   setIsActive((current) => !current);
+  // };
 
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
