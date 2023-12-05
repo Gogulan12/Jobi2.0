@@ -703,3 +703,192 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+/* ///////////////Collaboration///////////////////// */
+
+.collaborationSection {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.collabContent {
+  text-align: left;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.topnote {
+  color: lightgray;
+}
+
+.collabContent h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 50px;
+  color: #005025;
+}
+
+.collabcontentpara {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.collabLink {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: center; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.collabLink img {
+  padding-top: 3px;
+}
+
+/* ///////////////Guides///////////////////// */
+
+.jobiGuidesSection {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+
+.GuidesTitle {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0; */
+  margin: 50px 0;
+  align-items: center;
+}
+
+.GuidesTitle h2 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.GuidesTitle button {
+  height: fit-content;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #d2f34c;
+  font-weight: bold;
+}
+
+.GuidesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
+.guidebox {
+  text-align: left;
+  /* flex: 1; */
+  max-width: 350px;
+  /* width: 350px; */
+  margin: 10px;
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+}
+
+/* .guideboximage {
+  width: 90%;
+} */
+
+.guidebox p,
+.guidebox h5 {
+  margin: 0;
+}
+
+.guidebox p {
+  color: lightgray;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.guidebox p span {
+  color: #000;
+  font-weight: bold;
+}
+
+.guidebox h5 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.guideboximage img {
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+}
+
+/* ///////////////Resume///////////////// */
+
+.resumeContainer {
+  background-image: url("../Assets/HomeAssets/BgImage.svg");
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 540px;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.resumeInfoLeft,
+.resumeInfoRight {
+  width: 50%;
+}
+.resumeInfoLeft {
+  position: relative;
+}
+
+.resumeInfoRight {
+  text-align: left;
+  color: white;
+  padding-left: 50px;
+}
+
+.resumeInfoRight h3 {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.resumeInfoRight h3 span {
+  color: #dffa73;
+}
+
+.resumeInfoRightparagraphtext {
+  color: #81b197;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.resumeInfoLeft img {
+  position: absolute;
+  object-fit: cover;
+  width: 450px;
+  height: 450px;
+  bottom: 0px;
+  left: 104px;
+}
+
+.resumeInfoRight button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  padding: 3px 25px;
+  font-weight: bold;
+  background-color: #d3f15a;
+  margin-top: 50px;
+  cursor: pointer;
+}

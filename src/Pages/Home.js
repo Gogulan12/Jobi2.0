@@ -27,6 +27,20 @@ import apply from "../Assets/HowItWorksImgs/ApplyIcon.svg";
 import howitworksarrow from "../Assets/HowItWorksImgs/HowitWorksArrow.svg";
 import Footer from "../Components/Footer";
 
+// ///////////Collab //////////////
+import circles from "../Assets/HomeAssets/jobicircle.svg";
+import Collabarrow from "../Assets/HomeAssets/Arrow.svg";
+
+// ////////////Job Guides///////////
+
+import DesignGuide from "../Assets/HomeAssets/Design-Designer.jpg";
+import SolutionGuide from "../Assets/HomeAssets/Solution-productive.jpg";
+import PrintGuide from "../Assets/HomeAssets/print-Developer.jpg";
+
+// ////////// Resume ////////////
+import download from "../Assets/HomeAssets/Download.svg";
+import sideimage from "../Assets/HomeAssets/resumeImage.jpg";
+
 export default function Home() {
   const [isActive1, setActive1] = useState("false");
   const [isActive2, setActive2] = useState("false");
@@ -385,6 +399,91 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="collaborationSection">
+        <div className="collabImage">
+          <img src={circles} alt="" />
+        </div>
+        <div className="collabContent">
+          <p className="topnote">TOP BRAND</p>
+          <h2>
+            Collaboration with <br />
+            Top Brands.
+          </h2>
+          <p className="collabcontentpara">
+            We collaborate with a number of top tier companies on imagining the
+            future of work, have a look.
+          </p>
+          <a href="/" className="collabLink">
+            <p>Learn More</p>
+            <img src={Collabarrow} alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div className="jobiGuidesSection">
+        <div className="GuidesTitle">
+          <h2>Jobi Guides</h2>
+          <button>Explore More</button>
+        </div>
+        <div className="GuidesContainer">
+          <div className="guidebox">
+            <div className="guideboximage">
+              <img src={PrintGuide} alt="" />
+            </div>
+            <p>Developer, Code</p>
+            <h5>Print, publishing qui visual layout mockups.</h5>
+            <p>
+              By
+              <span> Rashed Kabir</span>
+            </p>
+          </div>
+          <div className="guidebox">
+            <div className="guideboximage">
+              <img src={DesignGuide} alt="" />
+            </div>
+            <p>Design, Art</p>
+            <h5>Designer’s checklist for every UX/UI project.</h5>
+            <p>
+              By
+              <span> Julie Margot</span>
+            </p>
+          </div>
+          <div className="guidebox">
+            <div className="guideboximage">
+              <img src={SolutionGuide} alt="" />
+            </div>
+            <p>Solution, Work</p>
+            <h5>Make more productive work flow in few steps.</h5>
+            <p>
+              By <span> Jubayer Al Hasan</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="resumeContainer">
+        <div className="resumeInfoLeft">
+          <img src={sideimage} alt="" />
+        </div>
+        <div className="resumeInfoRight">
+          <h3>
+            Get your <br />
+            <span>Matched Jobs </span>
+            in a <br />
+            few minutes.
+          </h3>
+          <p className="resumeInfoRightparagraphtext">
+            Find your dream job & earn from world leading brands. <br />
+            Upload your CV now.
+          </p>
+          <button>
+            <img src={download} alt="" />
+            <p>Upload your CV</p>
+          </button>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
