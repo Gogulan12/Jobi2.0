@@ -1,6 +1,6 @@
 .AboutHeader {
   background-color: #244034;
-  padding: 150px 0px;
+  padding: 150px 0px 100px;
 }
 
 .AboutHeadercontent {
@@ -12,7 +12,7 @@
 .AboutHeader .AboutHeadercontent h2 {
   color: white;
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 4rem;
 }
 
@@ -33,4 +33,217 @@ strong {
 }
 .aboutContent p {
   padding: 20px 0;
+}
+
+/* ////////About info section - below header//////////// */
+
+.AboutInfoSection {
+  display: flex;
+  max-width: 1200px;
+  margin: 100px auto;
+  margin-bottom: 150px;
+  justify-content: space-between;
+}
+
+.AboutInfoSectionLeft,
+.AboutInfoSectionRight {
+  width: 50%;
+}
+
+.AboutInfoSectionLeft h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+/* /////////Accordion Section////////// */
+/* AccordionMenu.css */
+.accordion-section {
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.accordion-header {
+  /* background-color: #f0f0f0; */
+  padding: 10px;
+  cursor: pointer;
+  /* border-bottom: 1px solid lightgray; */
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #244034;
+}
+
+.accordion-header.active {
+  /* background-color: #ccc; */
+}
+
+.accordion-content {
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-top: none;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.plusminus {
+  color: #244034;
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.accordionContainer {
+}
+
+/*/////////// video section /////////////*/
+
+.video-container {
+  position: relative;
+  width: 1267px;
+  height: 712.6px;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #244034;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.video-cover:hover {
+  background: #2b5040;
+}
+
+/* Stats Section */
+.jobiStats {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.jobistat {
+  padding: 20px;
+  color: #244034;
+}
+
+.jobistat h3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.jobistat p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* ///////////Leading Startups Section///////// */
+
+.LeadingStartups {
+  padding: 100px 0;
+}
+
+.LeadingHeaderSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leadHeader h3 {
+  text-align: left;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+  color: #244034;
+}
+
+.leadButtons {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.leadingstatupcaroselContainer {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+}
+
+.startup {
+  /* width: 640px;
+  height: 530px; */
+  width: 50%;
+  background-color: #dffa73;
+  padding: 30px;
+  text-align: left;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.startup2 {
+  background-color: #f9ffe1;
+}
+
+.startupText {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.startup h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.startup hr {
+  border-top: 1px solid black;
+  /* border: none; */
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 0;
+}
+
+.ratingContainer p {
+  margin: 0;
+}
+/* ///////////////Company Logos///////// */
+
+.companyLogos {
+  max-width: 1200px;
+  margin: 100px auto 0px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 150px;
 }
