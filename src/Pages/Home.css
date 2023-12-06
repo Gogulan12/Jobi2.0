@@ -782,6 +782,17 @@ h4 {
   align-items: center;
 }
 
+/* ////////////////MEDIA QUERY for HOW IT WORKS//////// */
+
+@media (max-width: 1020px) {
+  .howitworksarrow {
+    display: none;
+  }
+  .Howitworkssteps {
+    flex-direction: column;
+  }
+}
+
 /* ///////////////Collaboration///////////////////// */
 
 .collaborationSection {

@@ -379,7 +379,7 @@ export default function Home() {
             <p>It's very easy to open an account and start your journey.</p>
           </div>
           <div>
-            <img src={howitworksarrow} alt="" />
+            <img src={howitworksarrow} alt="" className="howitworksarrow" />
           </div>
           <div>
             <img src={profile} alt="" />
@@ -390,7 +390,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img src={howitworksarrow} alt="" />
+            <img src={howitworksarrow} alt="" className="howitworksarrow" />
           </div>
           <div>
             <img src={apply} alt="" />
