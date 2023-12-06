@@ -11,24 +11,40 @@
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  margin-top: 50px;
 }
 
-.error-container {
+/* .error-container {
   text-align: center;
   padding: 100px 0;
   margin: 0 20px;
+  width: 50%;
+} */
+
+.error-container {
+  width: 50%;
 }
 
 .error-title {
-  font-size: 3em;
+  font-size: 5em;
   margin-bottom: 20px;
   color: darkgreen; /* Bootstrap's danger color */
+  text-align: left;
+  font-weight: 300;
+  font-family: "EB Garamond", serif;
+  line-height: 1.1;
+  padding-bottom: 30px;
+}
+
+.error-title span {
+  color: #000;
 }
 
 .error-text {
-  font-size: 1.2em;
-  margin-bottom: 15px;
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+  text-align: left;
 }
 
 .error-list {
@@ -59,4 +75,19 @@
 }
 .errorImage img {
   width: 100%;
+}
+
+.errorGoBack {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d2f34c;
+  padding: 0px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.errorGoBack p {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
 }

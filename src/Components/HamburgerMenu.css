@@ -79,7 +79,7 @@ nav {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   .navContainer {
     padding: 0px 0px;
   }

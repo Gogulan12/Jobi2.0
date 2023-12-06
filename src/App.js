@@ -86,11 +86,11 @@ function App() {
                     <NavLink to="/pricing" onClick={toggleDropdown}>
                       Pricing
                     </NavLink>
-                    <NavLink to="/error" onClick={toggleDropdown}>
-                      404 Error
-                    </NavLink>
                     <NavLink to="/blog" onClick={toggleDropdown}>
                       Blog
+                    </NavLink>
+                    <NavLink to="/error" onClick={toggleDropdown}>
+                      404 Error
                     </NavLink>
                     <NavLink to="/construction" onClick={toggleDropdown}>
                       Construction
