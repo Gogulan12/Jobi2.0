@@ -88,6 +88,7 @@ export default function Home() {
           </div>
         </header>
       </div>
+
       <div className="categories">
         <div className="categoriesHeader">
           <div className="categoryTitle">
@@ -144,6 +145,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
+
       <div className="dropdownSection">
         <section className="centerSearch">
           <div className="left">
@@ -364,6 +366,7 @@ export default function Home() {
           <div className="right">{/* <img src={person} alt="" /> */}</div>
         </section>
       </div>
+
       <div className="HowitworksSection">
         <div className="HowitworksTitle">
           <h2>How it works?</h2>
