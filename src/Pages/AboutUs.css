@@ -131,7 +131,7 @@ strong {
   background: #2b5040;
 }
 
-/* Stats Section */
+/*////////////// Stats Section //////////////////////*/
 .jobiStats {
   display: flex;
   margin: 0 auto;
@@ -156,6 +156,57 @@ strong {
 .jobistat p {
   margin: 0;
   font-size: 1.2rem;
+}
+
+/*////////////// post a job Section //////////////////////*/
+.postAJobContainer {
+  display: flex;
+  margin: 150px auto;
+  max-width: 1200px;
+}
+
+.postAJobRight {
+  text-align: left;
+}
+
+.postjobtopnote {
+  text-transform: uppercase;
+  margin: 0;
+  color: lightgray;
+  font-size: 0.9rem;
+}
+.postAJobRight h3 {
+  font-size: 3.5rem;
+  color: #254035;
+  font-weight: 500;
+  margin: 0;
+}
+
+.postAJobRightPara {
+  line-height: 1.8;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.postAJobRight ul {
+  list-style: none;
+  /* margin: 0; */
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.postAJobRight ul li {
+  display: flex;
+  gap: 10px;
+}
+.postAJobRight ul li p {
+  margin: 7px 0;
+}
+
+.postJobbutton {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #dffa73;
 }
 
 /* ///////////Leading Startups Section///////// */

@@ -6,6 +6,10 @@ import Footer from "../Components/Footer";
 
 import videobutton from "../Assets/VideoButton.svg";
 
+// ///////////Why Choose us /////////
+import chooseleft from "../Assets/AboutUs/Left.svg";
+import checkmark from "../Assets/AboutUs/checkmark.svg";
+
 // //////////how it works
 
 import howitworksbanner from "../Assets/HowItWorksImgs/howitworks.svg";
@@ -148,26 +152,37 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* <div className="postAJobContainer">
-          <div className="postAJobLeft"></div>
+        <div className="postAJobContainer">
+          <div className="postAJobLeft">
+            <img src={chooseleft} alt="" />
+          </div>
           <div className="postAJobRight">
-            <p>why choose us</p>
+            <p className="postjobtopnote">why choose us</p>
             <h3>
               Get over 50,000+ <br /> talented experts <br />
               in jobi.
             </h3>
-            <p>
+            <p className="postAJobRightPara">
               A full hybrid workforce management tools are yours to use, as well
               as access to our top 1% of talent.{" "}
             </p>
             <ul>
-              <li>Seamless searching</li>
-              <li>Get top 3% experts for your project</li>
-              <li>Protected payments system</li>
+              <li>
+                <img src={checkmark} alt="" />
+                <p>Seamless searching</p>
+              </li>
+              <li>
+                <img src={checkmark} alt="" />
+                <p>Get top 3% experts for your project</p>
+              </li>
+              <li>
+                <img src={checkmark} alt="" />
+                <p>Protected payments system</p>
+              </li>
             </ul>
-            <button>Post a Job</button>
+            <button className="postJobbutton">Post a Job</button>
           </div>
-        </div> */}
+        </div>
 
         <div className="HowitworksSection">
           <div className="HowitworksTitle">
