@@ -277,6 +277,11 @@ h4 {
   .exploreList ul li {
     padding: 24px 30px;
   }
+
+  .categories .categoriesHeader .categoryTitle {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -292,12 +297,6 @@ h4 {
     margin: 10px 0;
     font-size: 0.8rem;
   }
-  /* .exploreList ul li h4 {
-    margin: 0;
-  }
-  .exploreList ul li p {
-    margin: 0;
-  } */
 }
 
 /* //////////////////Center///////////////// */
@@ -793,6 +792,28 @@ h4 {
   }
 }
 
+@media (max-width: 700px) {
+  .HowitworksTitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .HowitworksTitle img {
+    width: 10%;
+  }
+  .Howitworkssteps {
+    width: 50%;
+  }
+  .Howitworkssteps img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .HowitworksTitle h2 {
+    font-size: 2rem;
+  }
+}
+
 /* ///////////////Collaboration///////////////////// */
 
 .collaborationSection {
@@ -860,6 +881,24 @@ h4 {
   }
 }
 
+@media (max-width: 450px) {
+  .collabContent h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .collabcontentpara {
+    font-size: 1.2rem;
+    /* margin: 0; */
+    text-align: center;
+  }
+  .collabImage img {
+    width: 150px;
+  }
+  .collabLink p {
+    margin: 0;
+  }
+}
+
 /* ///////////////Guides///////////////////// */
 
 .jobiGuidesSection {
@@ -872,6 +911,7 @@ h4 {
   justify-content: space-between;
   margin: 50px 0;
   align-items: center;
+  padding: 0 30px;
 }
 
 .GuidesTitle h2 {
@@ -929,6 +969,23 @@ h4 {
   /* width: 100%; */
   max-width: 100%;
   height: auto;
+}
+
+/* ////////////////MEDIA QUERIES for Job Guide//////// */
+
+@media (max-width: 600px) {
+  .GuidesTitle h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .GuidesTitle {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 /* ///////////////Resume///////////////// */
@@ -993,4 +1050,59 @@ h4 {
   background-color: #d3f15a;
   margin-top: 50px;
   cursor: pointer;
+}
+
+/* //////////////MEDIA QUERY for Resume section///////// */
+
+@media (max-width: 1200px) {
+  .resumeContainer {
+    background-image: none;
+    background-color: #244034;
+    /* flex-direction: column-reverse; */
+  }
+
+  .resumeInfoLeft {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resumeInfoLeft img {
+    position: static;
+  }
+}
+
+@media (max-width: 1060px) {
+  .resumeInfoRight h3 {
+    font-size: 2.5rem;
+  }
+  .resumeInfoRightparagraphtext {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .resumeInfoLeft {
+    display: none;
+  }
+  .resumeInfoRight {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .resumeInfoRight h3 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .resumeInfoRight button {
+    margin-top: 20px;
+  }
 }
