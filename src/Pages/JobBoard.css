@@ -212,3 +212,102 @@
   text-decoration: none;
   border-radius: 20px;
 }
+
+/* /////////////////MEDIA QUERY//////////////////// */
+@media (max-width: 1200px) {
+  .filter-container {
+    margin: 50px 20px 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .jobPostings ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .jobPostings ul li {
+    margin: 10px;
+  }
+
+  .IndividJob {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .jobTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .contractType {
+    text-align: left;
+    width: 100%;
+  }
+
+  .contractType p {
+    margin: 0;
+  }
+  .jobLocation {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .jobLocation p {
+    margin: 0;
+  }
+
+  .ApplyandBookmark {
+    width: 100%;
+  }
+  .ApplyandBookmark a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .JobBoardContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .fullInputCategory {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .filterJobView {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 380px) {
+  .IndividJob {
+    width: 250px;
+    /* font-size: 1rem; */
+    padding: 15px;
+  }
+  .jobTitle {
+    font-size: 1.1rem;
+  }
+
+  .fullSearchBar {
+    flex-direction: column;
+    /* width: 100%; */
+    align-items: center;
+    /* width: 300px; */
+    margin: 0 auto;
+  }
+  .fullInput {
+    border-radius: 10px 10px 0 0;
+    width: 200px;
+  }
+  .fullSearchBar button {
+    border-radius: 0 0 10px 10px;
+    padding: 20px 30px;
+    width: 240px;
+  }
+}
