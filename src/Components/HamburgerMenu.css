@@ -169,4 +169,8 @@ nav {
   .navigationLinks a:hover {
     color: greenyellow; /* Change color on hover */
   }
+
+  .dropbtn {
+    background-color: gray;
+  }
 }
