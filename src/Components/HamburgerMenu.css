@@ -54,7 +54,7 @@ nav {
 }
 
 .navigationLinks a.active {
-  color: green;
+  /* color: green; */
   /* background: #333; */
   text-decoration: none;
 }
@@ -78,6 +78,13 @@ nav {
   color: #333;
   display: none;
 }
+
+/* .dropdown-content {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
 @media (max-width: 1120px) {
   .navContainer {
@@ -172,5 +179,9 @@ nav {
 
   .dropbtn {
     background-color: gray;
+  }
+
+  .dropdown-content {
+    top: 265px;
   }
 }

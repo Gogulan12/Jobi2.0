@@ -65,9 +65,9 @@
 
 .solution {
   position: absolute;
-  top: 85%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
   z-index: 1; /* Ensure it appears above the image and cover */
   /* color: white; */
   background-color: #00bf58;
@@ -155,4 +155,20 @@
   width: 12px;
   height: auto;
   padding-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .solution {
+    top: 80%;
+    /* left: 20%; */
+  }
+  .blog-post h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .blog-post {
+    width: 100%;
+  }
 }

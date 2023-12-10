@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 import logo from "./Assets/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,15 +21,35 @@ import JobDetail from "./Pages/JobDetail";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+    if (isDropdownOpen) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeMenu);
+
+    return () => {
+      document.removeEventListener("click", closeMenu);
+    };
+  }, [menuOpen, isDropdownOpen]);
+
+  const stopPropagation = (e) => {
+    e.stopPropagation();
   };
 
   return (
@@ -43,7 +63,10 @@ function App() {
               </NavLink>
               <button
                 className={`hamburger-button ${menuOpen ? "open" : ""}`}
-                onClick={toggleMenu}
+                onClick={(e) => {
+                  stopPropagation(e);
+                  toggleMenu();
+                }}
               >
                 <FontAwesomeIcon icon={faBars} className="fa-bars" />
               </button>
@@ -74,7 +97,13 @@ function App() {
                   </div>
                 </div> */}
                 <div className="dropdown">
-                  <button className="dropbtn" onClick={toggleDropdown}>
+                  <button
+                    className="dropbtn"
+                    onClick={(e) => {
+                      stopPropagation(e);
+                      toggleDropdown();
+                    }}
+                  >
                     <p>Pages</p>
                     <i className="arrow down"></i>
                   </button>
@@ -83,16 +112,40 @@ function App() {
                       isDropdownOpen ? "show" : ""
                     }`}
                   >
-                    <NavLink to="/pricing" onClick={toggleDropdown}>
+                    <NavLink
+                      to="/pricing"
+                      onClick={() => {
+                        toggleDropdown();
+                        toggleMenu();
+                      }}
+                    >
                       Pricing
                     </NavLink>
-                    <NavLink to="/blog" onClick={toggleDropdown}>
+                    <NavLink
+                      to="/blog"
+                      onClick={() => {
+                        toggleDropdown();
+                        toggleMenu();
+                      }}
+                    >
                       Blog
                     </NavLink>
-                    <NavLink to="/error" onClick={toggleDropdown}>
+                    <NavLink
+                      to="/error"
+                      onClick={() => {
+                        toggleDropdown();
+                        toggleMenu();
+                      }}
+                    >
                       404 Error
                     </NavLink>
-                    <NavLink to="/construction" onClick={toggleDropdown}>
+                    <NavLink
+                      to="/construction"
+                      onClick={() => {
+                        toggleDropdown();
+                        toggleMenu();
+                      }}
+                    >
                       Construction
                     </NavLink>
                   </div>

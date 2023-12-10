@@ -140,3 +140,17 @@
   top: 0;
   transform: translate(-50%) translateY(-50%);
 }
+
+@media (max-width: 500px) {
+  .pricingHeader h2 {
+    font-size: 2.5rem;
+  }
+  .pricingHeader h4 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .pricingHeader p {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
