@@ -1,6 +1,6 @@
 .AboutHeader {
   background-color: #244034;
-  padding: 150px 0px 100px;
+  padding: 100px 0px 100px;
 }
 
 .AboutHeadercontent {
@@ -12,7 +12,7 @@
 .AboutHeader .AboutHeadercontent h2 {
   color: white;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 4rem;
 }
 
@@ -21,11 +21,11 @@
   margin-bottom: 15px;
 }
 
-strong {
+/* strong {
   font-weight: bold;
-}
+} */
 
-.aboutContent {
+/* .aboutContent {
   text-align: left;
   margin: 0 auto;
   max-width: 1200px;
@@ -33,6 +33,12 @@ strong {
 }
 .aboutContent p {
   padding: 20px 0;
+} */
+
+@media (max-width: 450px) {
+  .AboutHeader .AboutHeadercontent h2 {
+    font-size: 2.5rem;
+  }
 }
 
 /* ////////About info section - below header//////////// */
@@ -79,10 +85,6 @@ strong {
   color: #244034;
 }
 
-.accordion-header.active {
-  /* background-color: #ccc; */
-}
-
 .accordion-content {
   padding: 10px;
   /* border: 1px solid #ddd; */
@@ -98,7 +100,46 @@ strong {
   font-family: sans-serif;
 }
 
-.accordionContainer {
+/* ///////////MEDIA QUERY ACCORDIAN SECTION ////////// */
+
+@media (max-width: 1200px) {
+  .AboutInfoSection {
+    flex-direction: column;
+  }
+  .AboutInfoSectionLeft,
+  .AboutInfoSectionRight {
+    width: 100%;
+  }
+  .AboutInfoSectionLeft br {
+    display: none;
+  }
+  .AboutInfoSectionLeft {
+    display: flex;
+    justify-content: center;
+  }
+  .AboutInfoSectionLeft h2 {
+    text-align: center;
+    /* font-size: 2.5rem; */
+  }
+  .AboutInfoSectionRight {
+    width: 85%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .AboutInfoSectionLeft h2 {
+    /* text-align: center; */
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .AboutInfoSectionLeft h2 {
+    /* text-align: center; */
+    font-size: 1.8rem;
+    margin: 10px;
+  }
 }
 
 /*/////////// video section /////////////*/
@@ -131,6 +172,41 @@ strong {
   background: #2b5040;
 }
 
+@media (max-width: 1200px) {
+  .video-container {
+    width: 633.5px;
+    height: 356.3px;
+    display: flex;
+    justify-content: center;
+  }
+  .video-container iframe {
+    width: 600px;
+    height: 356.3px;
+  }
+}
+
+@media (max-width: 650px) {
+  .video-container {
+    width: 316.75px;
+    height: 178.15px;
+  }
+  .video-container iframe {
+    width: 300px;
+    height: 178.15px;
+  }
+}
+
+@media (max-width: 345px) {
+  .video-container {
+    width: 253.4px;
+    height: 142.52px;
+  }
+  .video-container iframe {
+    width: 240px;
+    height: 142.52px;
+  }
+}
+
 /*////////////// Stats Section //////////////////////*/
 .jobiStats {
   display: flex;
@@ -156,6 +232,12 @@ strong {
 .jobistat p {
   margin: 0;
   font-size: 1.2rem;
+}
+
+@media (max-width: 650px) {
+  .jobistat h3 {
+    font-size: 2.5rem;
+  }
 }
 
 /*////////////// post a job Section //////////////////////*/
@@ -207,6 +289,51 @@ strong {
   border-radius: 30px;
   border: none;
   background-color: #dffa73;
+}
+
+@media (max-width: 1200px) {
+  .postAJobLeft {
+    display: flex;
+    justify-content: center;
+  }
+  .postAJobLeft img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 970px) {
+  .postAJobContainer {
+    flex-direction: column;
+  }
+  .postAJobRight {
+    text-align: center;
+    margin: 0px 30px;
+  }
+  .postAJobRight ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postAJobRight h3 {
+    font-size: 2.5rem;
+  }
+  .postAJobRight h3 br {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .postAJobRight h3 {
+    font-size: 2rem;
+  }
+
+  .postAJobRightPara {
+    line-height: 1.3;
+  }
+  .postAJobRight ul li p {
+    margin: 3px 0;
+  }
 }
 
 /* ///////////Leading Startups Section///////// */
@@ -284,6 +411,56 @@ strong {
 .ratingContainer p {
   margin: 0;
 }
+
+@media (max-width: 1220px) {
+  .LeadingHeaderSection {
+    margin: 0 30px;
+  }
+  .leadHeader h3 {
+    font-size: 2.5rem;
+  }
+  .leadingstatupcaroselContainer {
+    margin: 50px 30px;
+  }
+  .startup h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .startup img {
+    width: 100px;
+  }
+  .startup h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .startup {
+    padding: 20px;
+  }
+  .startup h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .startup2 {
+    display: none;
+  }
+  .leadingstatupcaroselContainer {
+    justify-content: center;
+  }
+  .startup {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .leadHeader h3 {
+    font-size: 1.5rem;
+  }
+}
+
 /* ///////////////Company Logos///////// */
 
 .companyLogos {
@@ -297,4 +474,13 @@ strong {
   gap: 4rem;
   border-bottom: 1px solid lightgray;
   padding-bottom: 150px;
+}
+
+@media (max-width: 600px) {
+  .companyLogos {
+    gap: 2rem;
+  }
+  .companyLogos img {
+    width: 100px;
+  }
 }
