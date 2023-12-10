@@ -41,12 +41,15 @@ function App() {
   };
 
   useEffect(() => {
-    document.addEventListener("click", closeMenu);
+    const handleDocumentClick = () => {
+      closeMenu();
+    };
+    document.addEventListener("click", handleDocumentClick);
 
     return () => {
-      document.removeEventListener("click", closeMenu);
+      document.removeEventListener("click", handleDocumentClick);
     };
-  }, [menuOpen, isDropdownOpen]);
+  }, [menuOpen, isDropdownOpen, closeMenu]);
 
   const stopPropagation = (e) => {
     e.stopPropagation();
