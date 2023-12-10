@@ -120,3 +120,35 @@
 .form-label textarea {
   font-family: sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .contact-container p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-form-container {
+    width: 80%;
+    /* display: flex; */
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .nameandemail {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nameandemailinner {
+    width: 100%;
+  }
+}

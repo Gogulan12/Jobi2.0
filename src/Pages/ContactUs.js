@@ -79,7 +79,7 @@ export default function ContactUs() {
           </div>
         </div>
 
-        <div className="contact-form">
+        <div className="contact-form-container">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="nameandemail">
               <label className="form-label nameandemailinner">
