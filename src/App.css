@@ -231,9 +231,9 @@ footer a:hover {
   position: absolute;
   top: 60px;
   /* background-color: #f1f1f1; */
-  background-color: #9fb448;
+  background-color: green;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .dropdown-content.show {
