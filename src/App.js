@@ -18,6 +18,9 @@ import Error404 from "./Pages/Error404";
 import UnderConstruction from "./Pages/UnderConstruction";
 import Pricing from "./Pages/Pricing";
 import JobDetail from "./Pages/JobDetail";
+import Search from "./Pages/search/Search";
+
+import Create from "./Pages/create/Create";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,24 +33,6 @@ function App() {
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
-
-  // const closeMenu = () => {
-  //   if (menuOpen) {
-  //     setMenuOpen(false);
-  //   }
-  //   if (isDropdownOpen) {
-  //     setDropdownOpen(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-
-  //   document.addEventListener("click", handleDocumentClick);
-
-  //   return () => {
-  //     document.removeEventListener("click", handleDocumentClick);
-  //   };
-  // }, [menuOpen, isDropdownOpen]);
 
   useEffect(() => {
     const closeMenu = () => {
@@ -198,7 +183,7 @@ function App() {
           <Route exact path="/jobboard">
             <Jobboard />
           </Route>
-          <Route path="/jobboard/jobdetail">
+          <Route path="/jobData/:id">
             <JobDetail />
           </Route>
           <Route path="/login">
@@ -218,6 +203,12 @@ function App() {
           </Route>
           <Route path="/pricing">
             <Pricing />
+          </Route>
+          <Route path="/create">
+            <Create />
+          </Route>
+          <Route path="/search">
+            <Search />
           </Route>
         </Switch>
       </BrowserRouter>

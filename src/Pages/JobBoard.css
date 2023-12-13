@@ -173,6 +173,13 @@
   margin: 20px 0;
 }
 
+.job-list {
+  padding: 0;
+  margin: 20px auto;
+  max-width: 1200px;
+  /* margin: 20px ; */
+}
+
 .IndividJob {
   display: flex;
   padding: 20px;
@@ -182,6 +189,7 @@
   align-items: center;
   text-align: left;
   padding-left: 50px;
+  margin: 20px 0;
 }
 
 .jobTitle {
@@ -194,8 +202,8 @@
 }
 
 .companyImage {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  /* height: 50px; */
 }
 
 .ApplyandBookmark {
@@ -232,11 +240,19 @@
     margin: 10px;
   }
 
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
   .IndividJob {
     width: 300px;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin: 10px;
   }
   .jobTitle {
     width: 100%;

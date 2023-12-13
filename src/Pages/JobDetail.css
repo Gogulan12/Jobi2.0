@@ -61,14 +61,14 @@
 }
 
 .containerforDetailImage {
-  width: 70px;
-  height: 70px;
+  width: 200px;
+  /* height: 70px; */
   /* border-radius: 50%; */
 }
 
 .containerforDetailImage img {
   width: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .VisitButtonLink {

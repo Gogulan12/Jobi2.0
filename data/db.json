@@ -1,0 +1,814 @@
+{
+  "jobsData": [
+    {
+      "id": "1",
+      "image": "https://1000logos.net/wp-content/uploads/2021/05/Coca-Cola-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Coca Cola",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Front-end Developer at Coca Cola Corporation, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Front-end Developer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "New York",
+        "country": "United States"
+      },
+      "overview": "Coca Cola is seeking a talented Front-end Developer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 50000,
+        "min": 40000
+      }
+    },
+    {
+      "id": "2",
+      "image": "https://cdn.freebiesupply.com/logos/large/2x/visa-logo-png-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Visa Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Developer at Visa Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Developer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "overview": "Visa Inc. is seeking a talented Developer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 80000,
+        "min": 50000
+      }
+    },
+    {
+      "id": "3",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1920px-Salesforce.com_logo.svg.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Salesforce Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Data Analyst at Salesforce Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Data Analyst",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Boston",
+        "country": "United States"
+      },
+      "overview": "Salesforce Inc. is seeking a Data Analyst to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 70000,
+        "min": 60000
+      }
+    },
+    {
+      "id": "4",
+      "image": "https://cdn.freebiesupply.com/images/large/2x/amazon-logo-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Amazon.com Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Designer at Amazon.com Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Designer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Dallas",
+        "country": "United States"
+      },
+      "overview": "Amazon.com Inc. is seeking a talented Designer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 75000,
+        "min": 55000
+      }
+    },
+    {
+      "id": "5",
+      "image": "https://cdn.freebiesupply.com/images/large/2x/bank-of-america-logo-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Bank of America Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Drupal Developer at Bank of America Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Drupal Developer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "New York",
+        "country": "United States"
+      },
+      "overview": "Bank of America Inc. is seeking a talented Drupal Developer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 90000,
+        "min": 70000
+      }
+    },
+    {
+      "id": "6",
+      "image": "https://cdn.freebiesupply.com/logos/large/2x/jaguar-cars-logo-png-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Jaguar Land Rover",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Graphic Designer at Jaguar Land Rover, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Graphic Designer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "New York",
+        "country": "United States"
+      },
+      "overview": "Jaguar Land Rover is seeking a talented Graphic Designer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 90000,
+        "min": 80000
+      }
+    },
+    {
+      "id": "7",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/microsoft-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Mircosoft Corporation",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Content Writer at Mircosoft Corporation, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Content Writer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Phoenix",
+        "country": "United States"
+      },
+      "overview": "Mircosoft Corporation is seeking a talented Content Writer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 75000,
+        "min": 65000
+      }
+    },
+    {
+      "id": "8",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/google-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Google Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Network Engineer at Google Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Network Engineer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "country": "United States"
+      },
+      "overview": "Google Inc. is seeking a talented Network Engineer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 100000,
+        "min": 90000
+      }
+    },
+    {
+      "id": "9",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/samsung-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Samsung Electronics Co.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Product Manager at Samsung Electronics Co., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Product Manager",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Miami",
+        "country": "United States"
+      },
+      "overview": "Samsung Electronics Co. is seeking a talented Product Manager to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 50000,
+        "min": 40000
+      }
+    },
+    {
+      "id": "10",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/walt-disney-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "The Walt Disney Company",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Marketing Specialist at The Walt Disney Company, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Marketing Specialist",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "overview": "The Walt Disney Company is seeking a talented Marketing Specialist to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 95000,
+        "min": 80000
+      }
+    },
+    {
+      "id": "11",
+      "image": "https://cdn.freebiesupply.com/images/large/2x/amazon-logo-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Amazon.com Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Backend Developer at Amazon.com Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Backend Developer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "New York",
+        "country": "United States"
+      },
+      "overview": "Amazon.com Inc. is seeking a talented Backend Developer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 65000,
+        "min": 60000
+      }
+    },
+    {
+      "id": "12",
+      "image": "https://cdn.freebiesupply.com/images/large/2x/bank-of-america-logo-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Bank of America Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a UX/UI Designer at Bank of America Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "UX/UI Designer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "overview": "Bank of America Inc. is seeking a talented UX/UI Designer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 80000,
+        "min": 50000
+      }
+    },
+    {
+      "id": "13",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/microsoft-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Mircosoft Corporation",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Data Scientist at Mircosoft Corporation, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Data Scientist",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Boston",
+        "country": "United States"
+      },
+      "overview": "Mircosoft Corporation is seeking a talented Data Scientist to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 75000,
+        "min": 70000
+      }
+    },
+    {
+      "id": "14",
+      "image": "https://cdn.freebiesupply.com/logos/large/2x/jaguar-cars-logo-png-transparent.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Jaguar Land Rover",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Frontend Developer at Jaguar Land Rover, you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Frontend Developer",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "overview": "Jaguar Land Rover is seeking a talented Frontend Developer to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 70000,
+        "min": 65000
+      }
+    },
+    {
+      "id": "15",
+      "image": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/google-logo.png",
+      "url": "https://acme.corp/jobs/front-end-developer",
+      "benefits": [
+        "Competitive salary and benefits package.",
+        "Flexible work hours and remote work options.",
+        "Opportunities for professional development and career advancement.",
+        "Friendly and supportive work environment."
+      ],
+      "category": "Development",
+      "date": "2023-03-20",
+      "employer": "Google Inc.",
+      "facebook": "https://www.facebook.com/acme",
+      "twitter": "https://twitter.com/acme",
+      "experienceYears": 5,
+      "expertiseLevel": "Intermediate",
+      "description": "As a Developer & expert in java c++ at Google Inc., you will be responsible for building and maintaining the company's website and web applications.",
+      "title": "Developer & expert in java c++",
+      "contractType": "Fulltime",
+      "keywords": [
+        "web development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Git",
+        "version control"
+      ],
+      "location": {
+        "city": "Dallas",
+        "country": "United States"
+      },
+      "overview": "Google Inc. is seeking a talented Developer & expert in java c++ to join our growing team.",
+      "requiredSkills": [
+        "Proficiency in HTML, CSS, and JavaScript.",
+        "Experience with modern front-end frameworks such as React or Vue.js.",
+        "Experience with Git and version control.",
+        "Strong problem-solving and debugging skills.",
+        "Excellent communication and collaboration skills."
+      ],
+      "responsibilities": [
+        "Develop new features for the company's website and web applications.",
+        "Maintain and improve existing code.",
+        "Collaborate with designers and back-end developers to implement new features.",
+        "Write clean, modular, and well-documented code.",
+        "Optimize web pages for maximum speed and scalability."
+      ],
+      "salary": {
+        "max": 40000,
+        "min": 30000
+      }
+    }
+  ]
+}

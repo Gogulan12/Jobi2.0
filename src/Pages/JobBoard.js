@@ -1,3 +1,5 @@
+import { useFetch } from "../hooks/useFetch";
+
 import React, { useState } from "react";
 
 import "./JobBoard.css";
@@ -5,13 +7,14 @@ import "./JobBoard.css";
 import downarrow from "../Assets/dropdownArrow.svg";
 
 import filter from "../Assets/filterGrid.svg";
-import TDLogo from "../Assets/tdLogo.svg";
-import bookmark from "../Assets/Bookmark.svg";
 
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer";
+import JobList from "../Components/JobList";
 
 export default function JobBoard() {
+  const { data, isPending, error } = useFetch("http://localhost:3000/jobsData");
+
   const [term, setTerm] = useState("");
   const history = useHistory();
 
@@ -48,6 +51,7 @@ export default function JobBoard() {
                 <input
                   type="text"
                   placeholder="UI Designer"
+                  id="search"
                   onChange={(e) => setTerm(e.target.value)}
                   required
                 />
@@ -157,7 +161,13 @@ export default function JobBoard() {
       </div>
 
       <div className="jobPostings">
-        <ul>
+        <div>
+          {error && <p className="error">{error}</p>}
+          {isPending && <p className="loading">Loading...</p>}
+          {data && <JobList jobs={data} />}
+        </div>
+
+        {/* <ul>
           <li>
             <div className="IndividJob">
               <img src={TDLogo} alt="" className="companyImage" />
@@ -392,7 +402,7 @@ export default function JobBoard() {
               </div>
             </div>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <Footer />
     </div>
