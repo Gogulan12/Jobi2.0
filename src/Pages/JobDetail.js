@@ -5,7 +5,7 @@ import { useFetch } from "../hooks/useFetch";
 
 import Footer from "../Components/Footer";
 
-import td from "../Assets/tdLogo.svg";
+// import td from "../Assets/tdLogo.svg";
 
 export default function JobDetail() {
   const { id } = useParams();
