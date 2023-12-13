@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import downarrow from "../../Assets/dropdownArrow.svg";
 
-import filter from "../../Assets/filterGrid.svg";
+// import filter from "../../Assets/filterGrid.svg";
 
 import { useHistory, useLocation } from "react-router-dom";
 

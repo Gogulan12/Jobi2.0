@@ -2,8 +2,8 @@ import React from "react";
 import "./JobList.css";
 import { Link } from "react-router-dom";
 
-import filter from "../Assets/filterGrid.svg";
-import TDLogo from "../Assets/tdLogo.svg";
+// import filter from "../Assets/filterGrid.svg";
+// import TDLogo from "../Assets/tdLogo.svg";
 import bookmark from "../Assets/Bookmark.svg";
 
 export default function JobList({ jobs }) {
