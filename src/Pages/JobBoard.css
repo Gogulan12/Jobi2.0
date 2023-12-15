@@ -133,6 +133,17 @@
   padding: 50px 0 50px;
 }
 
+.linkContainer {
+  margin-top: 50px;
+}
+.linktoPost {
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
 /* //////////////////////Filter Section///////////////// */
 
 .filterJobView {

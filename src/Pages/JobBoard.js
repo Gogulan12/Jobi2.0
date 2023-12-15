@@ -60,13 +60,18 @@ export default function JobBoard() {
                 <div className="fullInputCategoryContainer">
                   <label htmlFor="category">Category</label>
                   <select name="category" id="category">
-                    <option value="#">Web Design</option>
+                    <option value="#">IT</option>
                   </select>
                 </div>
               </div>
               <button>SEARCH</button>
             </div>
           </form>
+          <div className="linkContainer">
+            <a href="/create" className="linktoPost">
+              Click Here to Post a Job
+            </a>
+          </div>
         </div>
       </div>
       <div className="filter-container">

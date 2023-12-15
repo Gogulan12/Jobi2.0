@@ -1,0 +1,235 @@
+.CreatPostHeaderContainer {
+  background-color: #244034;
+  color: white;
+  margin: 0;
+}
+
+.CreatPostHeader {
+  padding: 50px 0;
+}
+
+.CreatPostHeader h2 {
+  margin: 0px;
+  padding: 0;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.CreatPostHeader p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.jobposticonOuterContainer {
+  background-color: #f0f5f3;
+}
+
+.jobposticonInnerContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+  position: relative;
+}
+
+.createIcons {
+  z-index: 2;
+}
+
+.createIcons img {
+  width: 70px;
+}
+
+.progressbar {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: grey;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.jobinfoOuter {
+  background-color: #f0f5f3;
+  padding: 50px 0 100px;
+}
+
+.formContainer {
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.formContainer form {
+  padding: 40px;
+  text-align: left;
+}
+
+.formContainer h3 {
+  text-align: left;
+  color: #2b7551;
+  font-size: 1.7rem;
+}
+
+/* ///////////////Job Details section of Create Form///////////// */
+
+.jobdetailpostcontainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.postlabelsTitles {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+
+.postlabelsTitles span,
+.overviewlabel span {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.postlabelsTitles input,
+.overviewlabel input {
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.overviewlabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.postjobdescriplabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.postjobdescriplabel span {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.postjobdescriplabel textarea {
+  padding: 20px;
+  height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+
+.salarytitle {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.salarypostContainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* ///////////////Skills section of Create Form///////////// */
+
+.listsforjobpostlabel {
+  text-align: left;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.listsforjobpostlabel span {
+  font-weight: bold;
+}
+
+.responsibilities,
+.postskills,
+.postkeywords,
+.postBenefits {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px;
+  gap: 10px;
+}
+
+.responsibilities input,
+.postskills input,
+.postkeywords input,
+.postBenefits input {
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.responsibilities button,
+.postskills button,
+.postkeywords button,
+.postBenefits button {
+  background-color: rgb(49, 121, 90, 10%);
+  border: none;
+  padding: 10px 20px;
+  color: #768981;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ///////////////Address section of Create Form///////////// */
+
+.postaddresscontainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.postlabels {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+
+.postlabels span {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.postlabels input {
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.postSubmit {
+  display: flex;
+  background-color: #31795a;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}

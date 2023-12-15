@@ -77,6 +77,11 @@ export default function Search() {
               <button>SEARCH</button>
             </div>
           </form>
+          <div className="linkContainer">
+            <a href="/create" className="linktoPost">
+              Click Here to Post a Job
+            </a>
+          </div>
         </div>
       </div>
       <div className="filter-container">
