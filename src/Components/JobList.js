@@ -36,7 +36,7 @@ export default function JobList({ jobs }) {
               {job.location.city}, {job.location.country}
             </p>
             <p className="skills">
-              {job.keywords[3]}, {job.keywords[4]},{job.keywords[5]}
+              {job.keywords[1]}, {job.keywords[2]},{job.keywords[3]}
             </p>
           </div>
           <div className="ApplyandBookmark">

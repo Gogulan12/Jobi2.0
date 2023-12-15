@@ -1,6 +1,7 @@
-import { useFetch } from "../hooks/useFetch";
+// import { useFetch } from "../hooks/useFetch";
+import { projectFirestore } from "../firebase/config";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./JobBoard.css";
 
@@ -13,7 +14,7 @@ import Footer from "../Components/Footer";
 import JobList from "../Components/JobList";
 
 export default function JobBoard() {
-  const { data, isPending, error } = useFetch("http://localhost:3000/jobsData");
+  // const { data, isPending, error } = useFetch("http://localhost:3000/jobsData");
 
   const [term, setTerm] = useState("");
   const history = useHistory();
@@ -35,6 +36,36 @@ export default function JobBoard() {
   const toggleFilter = () => {
     setIsFilterOpen(!isFilterOpen);
   };
+
+  const [data, setData] = useState(null);
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    setIsPending(true);
+
+    projectFirestore
+      .collection("jobsData")
+      .get()
+      .then((snapshot) => {
+        // console.log(snapshot);
+        if (snapshot.empty) {
+          setError("No Jobs to load");
+          setIsPending(false);
+        } else {
+          let results = [];
+          snapshot.docs.forEach((doc) => {
+            results.push({ id: doc.id, ...doc.data() });
+          });
+          setData(results);
+          setIsPending(false);
+        }
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsPending(false);
+      });
+  }, []);
 
   return (
     <div>

@@ -817,25 +817,15 @@
         "max": 1001
       },
       "overview": "asdfa",
-      "responsibilities": [
-        "Maintain",
-        "Clean"
-      ],
-      "keywords": [
-        "test"
-      ],
-      "requiredSkills": [
-        "Html",
-        "css"
-      ],
+      "responsibilities": ["Maintain", "Clean"],
+      "keywords": ["test"],
+      "requiredSkills": ["Html", "css"],
       "date": "2023-12-15",
       "title": "asdfas",
-      "image": "https://t3.ftcdn.net/jpg/05/27/49/44/360_F_527494416_7PWpMBqkWQarxhOgD1vIDzhDxizP1cQd.jpg",
+      "image": "https://img.freepik.com/premium-vector/new-post-black-white-typography-monochrome-banner-icon-emblem-design-element-hand-writing-lettering_87771-14880.jpg",
       "contractType": "Fulltime",
       "description": "asdgasdgasdf",
-      "benefits": [
-        "friendly"
-      ],
+      "benefits": ["friendly"],
       "location": {
         "city": "Toronto",
         "country": "Canada"
@@ -856,13 +846,7 @@
         "Write clean, modular, and well-documented code",
         "Optimize web pages for maximum speed and scalability"
       ],
-      "keywords": [
-        "web development",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React"
-      ],
+      "keywords": ["web development", "HTML", "CSS", "JavaScript", "React"],
       "requiredSkills": [
         "Proficiency in HTML, CSS, and JavaScript",
         "Experience with modern front-end frameworks such as React or Vue.js.",
@@ -894,24 +878,9 @@
         "max": "1001"
       },
       "overview": "asdfasdf asdfajsdl;fkj l;jas kl;fajsdkl;fja l;kfa;lsdkjfasdkl;fj asdsl;kfjnasdkl;fja;sdklf dfkjal;sdfkjasl;dkf",
-      "responsibilities": [
-        "asdfasd",
-        "dsfsd",
-        "asdfg",
-        "werte"
-      ],
-      "keywords": [
-        "fhgjf",
-        "fghjjfgh",
-        "dfgyhd",
-        "dfghbnd"
-      ],
-      "requiredSkills": [
-        "retwert",
-        "wertwert",
-        "fdgtrt",
-        "kghjfgjh"
-      ],
+      "responsibilities": ["asdfasd", "dsfsd", "asdfg", "werte"],
+      "keywords": ["fhgjf", "fghjjfgh", "dfgyhd", "dfghbnd"],
+      "requiredSkills": ["retwert", "wertwert", "fdgtrt", "kghjfgjh"],
       "date": "2023-12-15",
       "title": "asdfasdgasdgadsfasd",
       "image": "https://t3.ftcdn.net/jpg/05/27/49/44/360_F_527494416_7PWpMBqkWQarxhOgD1vIDzhDxizP1cQd.jpg",

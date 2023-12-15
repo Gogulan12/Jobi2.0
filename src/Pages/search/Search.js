@@ -1,6 +1,7 @@
-import { useFetch } from "../../hooks/useFetch";
+// import { useFetch } from "../../hooks/useFetch";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { projectFirestore } from "../../firebase/config";
 
 import downarrow from "../../Assets/dropdownArrow.svg";
 
@@ -44,8 +45,35 @@ export default function Search() {
   const queryParams = new URLSearchParams(queryString);
   const query = queryParams.get("q");
 
-  const url = "http://localhost:3000/jobsData?q=" + query;
-  const { data, isPending, error } = useFetch(url);
+  // const url = "http://localhost:3000/jobsData?q=" + query;
+  // const { data, isPending, error } = useFetch(url);
+
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(false);
+  const [isPending, setIsPending] = useState(false);
+
+  useEffect(() => {
+    setIsPending(true);
+    const unsub = projectFirestore
+      .collection("jobsData")
+      .onSnapshot((snapshot) => {
+        if (snapshot.empty) {
+          setError("There are no such job post");
+          setIsPending(false);
+        } else {
+          let searchResults = [];
+          snapshot.docs.forEach((doc) => {
+            if (doc.data().title.toLowerCase().includes(query.toLowerCase())) {
+              searchResults.push({ id: doc.id, ...doc.data() });
+            }
+          });
+          setData(searchResults);
+          setIsPending(false);
+        }
+      });
+    return () => unsub();
+  }, [query]);
+
   return (
     <div>
       <div className="JobBoardContainer">

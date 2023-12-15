@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./JobDetail.css";
 import { useParams } from "react-router-dom";
-import { useFetch } from "../hooks/useFetch";
+// import { useFetch } from "../hooks/useFetch";
+import { projectFirestore } from "../firebase/config";
 
 import Footer from "../Components/Footer";
 
@@ -9,9 +10,32 @@ import Footer from "../Components/Footer";
 
 export default function JobDetail() {
   const { id } = useParams();
-  const url = "http://localhost:3000/jobsData/" + id;
+  // const url = "http://localhost:3000/jobsData/" + id;
 
-  const { error, isPending, data: job } = useFetch(url);
+  // const { error, isPending, data: job } = useFetch(url);
+
+  const [job, setJob] = useState(null);
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    setIsPending(true);
+
+    projectFirestore
+      .collection("jobsData")
+      .doc(id)
+      .get()
+      .then((doc) => {
+        // console.log(doc);
+        if (doc.exists) {
+          setIsPending(false);
+          setJob(doc.data());
+        } else {
+          setIsPending(false);
+          setError("Could not find that job post");
+        }
+      });
+  }, [id]);
 
   return (
     <div>

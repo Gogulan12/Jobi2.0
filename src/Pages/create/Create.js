@@ -11,12 +11,11 @@ import confirmationicon from "../../Assets/Create/confirmationicon.svg";
 
 // project1 imports
 
-import { useState, useRef, useEffect } from "react";
-import { useFetch } from "../../hooks/useFetch";
+import { useState, useRef } from "react";
+// import { useFetch } from "../../hooks/useFetch";
 import { useHistory } from "react-router-dom";
 import Footer from "../../Components/Footer";
-
-// import { projectFirestore } from "../../firebase/config";
+import { projectFirestore } from "../../firebase/config";
 
 export default function Create() {
   // ////////////////////////////////////////
@@ -47,53 +46,17 @@ export default function Create() {
   const history = useHistory();
 
   // const { postData, data, error } = useFetch(
-  const { postData, data } = useFetch("http://localhost:3000/jobsData", "POST");
+  //   "http://localhost:3000/jobsData",
+  //   "POST"
+  // );
 
   let today = new Date().toISOString().slice(0, 10);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(
-    //   employer,
-    //   title,
-    //   minSalary,
-    //   maxSalary,
-    //   overview,
-    //   description,
-    //   responsibility,
-    //   requiredSkill,
-    //   keyword,
-    //   benefit,
-    //   city,
-    //   country,
-    //   responsibilities,
-    //   requiredSkills,
-    //   keywords,
-    //   benefits
-    // );
-    // const doc = {
-    //   employer,
-    //   salary: [{ min: minSalary, max: maxSalary }],
-    //   overview,
-    //   responsibilities,
-    //   keywords,
-    //   requiredSkills,
-    //   date: today,
-    //   title,
-    //   image:
-    //     "https://t3.ftcdn.net/jpg/05/27/49/44/360_F_527494416_7PWpMBqkWQarxhOgD1vIDzhDxizP1cQd.jpg",
-    //   contractType: "Fulltime",
-    //   description,
-    //   benefits,
-    //   location: [{ city: city, country: country }],
-    // };
-    // try {
-    //   await projectFirestore.collection("jobsData").add(doc);
-    //   history.push("/listing");
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    postData({
+    // console.log(employer,title,minSalary,maxSalary,overview,description,responsibility,requiredSkill,keyword,benefit,city,country,responsibilities,requiredSkills,keywords,benefits );
+
+    const doc = {
       employer,
       salary: { min: minSalary, max: maxSalary },
       overview,
@@ -103,12 +66,18 @@ export default function Create() {
       date: today,
       title,
       image:
-        "https://t3.ftcdn.net/jpg/05/27/49/44/360_F_527494416_7PWpMBqkWQarxhOgD1vIDzhDxizP1cQd.jpg",
+        "https://img.freepik.com/premium-vector/new-post-black-white-typography-monochrome-banner-icon-emblem-design-element-hand-writing-lettering_87771-14880.jpg",
       contractType: "Fulltime",
       description,
       benefits,
       location: { city: city, country: country },
-    });
+    };
+    try {
+      projectFirestore.collection("jobsData").add(doc);
+      history.push("/jobboard");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const handleAdd = (e) => {
@@ -159,11 +128,11 @@ export default function Create() {
   };
 
   // redirect the user when we get data response
-  useEffect(() => {
-    if (data) {
-      history.push("/jobboard");
-    }
-  }, [data, history]);
+  // useEffect(() => {
+  //   if (data) {
+  //     history.push("/jobboard");
+  //   }
+  // }, [data, history]);
 
   // ////////////////////////////////////////
 
