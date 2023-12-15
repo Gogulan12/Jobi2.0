@@ -46,10 +46,8 @@ export default function Create() {
   ////////////////////////////////////////////////
   const history = useHistory();
 
-  const { postData, data, error } = useFetch(
-    "http://localhost:3000/jobsData",
-    "POST"
-  );
+  // const { postData, data, error } = useFetch(
+  const { postData, data } = useFetch("http://localhost:3000/jobsData", "POST");
 
   let today = new Date().toISOString().slice(0, 10);
 
@@ -165,7 +163,7 @@ export default function Create() {
     if (data) {
       history.push("/jobboard");
     }
-  }, [data]);
+  }, [data, history]);
 
   // ////////////////////////////////////////
 
