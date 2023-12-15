@@ -235,10 +235,12 @@ footer a:hover {
   z-index: 1;
   border-radius: 10px;
   /* right: 366px; */
-  width: 200px;
+  /* width: 200px; */
   /* display: flex; */
   /* align-items: center; */
   /* margin: 0 auto; */
+  padding: 10px 20px;
+  text-align: left;
 }
 
 .dropdown-content.show {
@@ -254,6 +256,15 @@ footer a:hover {
   text-decoration: none;
   display: block;
   margin: 0 auto;
+}
+
+.dropdown-content.show a {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  justify-content: left;
+  padding: 8px;
+  margin: 0;
 }
 
 /* .navigationLinks.open a {
