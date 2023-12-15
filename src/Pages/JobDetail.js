@@ -100,7 +100,7 @@ export default function JobDetail() {
                     </div>
                   </div>
                   <h5>{job.employer}</h5>
-                  <a href="/" className="VisitButtonLink">
+                  <a href="/error" className="VisitButtonLink">
                     <p>Visit Website</p>
                   </a>
                   <hr />
@@ -126,7 +126,7 @@ export default function JobDetail() {
                       <p>{job.experienceYears} Years</p>
                     </div>
                   </div>
-                  <a href="/" className="applyButtonForJobPost">
+                  <a href="/register" className="applyButtonForJobPost">
                     <p>Apply Now</p>
                   </a>
                 </div>
