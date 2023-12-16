@@ -8,6 +8,7 @@ import downarrow from "../../Assets/dropdownArrow.svg";
 // import filter from "../../Assets/filterGrid.svg";
 
 import { useHistory, useLocation } from "react-router-dom";
+import search from "../../Assets/SearchIcon.svg";
 
 // styles
 
@@ -112,6 +113,7 @@ export default function Search() {
           </div>
         </div>
       </div>
+
       <div className="filter-container">
         <button
           className="filter-button"
@@ -127,57 +129,104 @@ export default function Search() {
         {isFilterOpen && (
           <div className="filter-content">
             <div className="filter-content-info">
-              <label>
-                Keyword or Title:
-                <input type="text" />
-              </label>
+              <div className="dropdownandsearchFilters">
+                <label>
+                  <p>Keyword or Title:</p>
+                  <div className="search-container">
+                    <input type="text" placeholder="Search by Keywords" />
+                    <img src={search} alt="" className="search-icon" />
+                  </div>
+                </label>
 
-              <label>
-                Categories:
-                <select>{/* Add your category options here */}</select>
-              </label>
+                <label>
+                  <p>Categories:</p>
+                  <select placeholder="Development">
+                    {/* Add your category options here */}
+                    <option value="Developement">Development</option>
+                  </select>
+                </label>
 
-              <label>
-                Location:
-                <select>{/* Add your location options here */}</select>
-              </label>
+                <label>
+                  <p>Location:</p>
+                  <select placeholder="Washington DC">
+                    <option disabled="" selected="" hidden>
+                      Select Option
+                    </option>
+                    <option value="Beginner">Miami, Florida</option>
+                    <option value="Intermediate">Dallas, Texas</option>
+                    <option value="Advanced">Denver, Colorado</option>
+                    <option value="Proficient">Boston, Massachusetts</option>
+                    <option value="Proficient">Tucson, Arizona</option>
+                  </select>
+                </label>
 
-              <label>
-                English Fluency:
-                <select>{/* Add your English fluency options here */}</select>
-              </label>
+                <label>
+                  <p>English Fluency:</p>
+                  <select>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Proficient">Proficient</option>
+                  </select>
+                </label>
+              </div>
 
-              <label>
-                Job Type:
-                <div>
-                  <label>
-                    <input type="checkbox" /> Full Time
+              <div className="selectorfilters">
+                <div className="selectorfiltersinnerContainer">
+                  <label className="jobType">
+                    <p>Job Type:</p>
+                    <div className="jobTypeoption">
+                      <label>
+                        <input type="checkbox" /> Fulltime
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Hourly-Contract
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Part-time (20hr/week)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Fixed-Price
+                      </label>
+                      {/* Add more job types as needed */}
+                    </div>
                   </label>
-                  <label>
-                    <input type="checkbox" /> Part Time
+
+                  <label className="ExpLevel">
+                    <p>Experience Level:</p>
+                    <div className="ExpLeveloption">
+                      <label>
+                        <input type="checkbox" /> Beginner (1-3yrs)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Intermediate (3-5yrs)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Expert (5-10yrs)
+                      </label>
+                      {/* Add more experience levels as needed */}
+                    </div>
                   </label>
-                  {/* Add more job types as needed */}
+
+                  <label className="salaryrangecontainer">
+                    <p>Salary Range:</p>
+                    <div className="Salaryinputscontainer">
+                      <div className="salaryminmaxcontainer">
+                        <input type="number" placeholder="min" />
+                        <p> - </p>
+                        <input type="number" placeholder="max" />
+                        <p>USD</p>
+                      </div>
+                      <input
+                        className="slider"
+                        type="range"
+                        min="0"
+                        max="100"
+                      />
+                    </div>
+                  </label>
                 </div>
-              </label>
-
-              <label>
-                Experience Level:
-                <div>
-                  <label>
-                    <input type="checkbox" /> Entry Level
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Mid Level
-                  </label>
-                  {/* Add more experience levels as needed */}
-                </div>
-              </label>
-
-              <label>
-                Salary:
-                <input type="range" min="0" max="100000" />
-                <input type="text" placeholder="Enter Salary" />
-              </label>
+              </div>
             </div>
           </div>
         )}

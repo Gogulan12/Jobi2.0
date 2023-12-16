@@ -165,53 +165,60 @@ export default function JobBoard() {
               </div>
 
               <div className="selectorfilters">
-                <label className="jobType">
-                  <p>Job Type:</p>
-                  <div className="jobTypeoption">
-                    <label>
-                      <input type="checkbox" /> Fulltime
-                    </label>
-                    <label>
-                      <input type="checkbox" /> Hourly-Contract
-                    </label>
-                    <label>
-                      <input type="checkbox" /> Part-time (20hr/week)
-                    </label>
-                    <label>
-                      <input type="checkbox" /> Fixed-Price
-                    </label>
-                    {/* Add more job types as needed */}
-                  </div>
-                </label>
-
-                <label className="ExpLevel">
-                  <p>Experience Level:</p>
-                  <div className="ExpLeveloption">
-                    <label>
-                      <input type="checkbox" /> Beginner (1-3yrs)
-                    </label>
-                    <label>
-                      <input type="checkbox" /> Intermediate (3-5yrs)
-                    </label>
-                    <label>
-                      <input type="checkbox" /> Expert (5-10yrs)
-                    </label>
-                    {/* Add more experience levels as needed */}
-                  </div>
-                </label>
-
-                <label className="salaryrangecontainer">
-                  <p>Salary Range:</p>
-                  <div className="Salaryinputscontainer">
-                    <div className="salaryminmaxcontainer">
-                      <input type="number" placeholder="min" />
-                      <p> - </p>
-                      <input type="number" placeholder="max" />
-                      <p>USD</p>
+                <div className="selectorfiltersinnerContainer">
+                  <label className="jobType">
+                    <p>Job Type:</p>
+                    <div className="jobTypeoption">
+                      <label>
+                        <input type="checkbox" /> Fulltime
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Hourly-Contract
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Part-time (20hr/week)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Fixed-Price
+                      </label>
+                      {/* Add more job types as needed */}
                     </div>
-                    <input className="slider" type="range" min="0" max="100" />
-                  </div>
-                </label>
+                  </label>
+
+                  <label className="ExpLevel">
+                    <p>Experience Level:</p>
+                    <div className="ExpLeveloption">
+                      <label>
+                        <input type="checkbox" /> Beginner (1-3yrs)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Intermediate (3-5yrs)
+                      </label>
+                      <label>
+                        <input type="checkbox" /> Expert (5-10yrs)
+                      </label>
+                      {/* Add more experience levels as needed */}
+                    </div>
+                  </label>
+
+                  <label className="salaryrangecontainer">
+                    <p>Salary Range:</p>
+                    <div className="Salaryinputscontainer">
+                      <div className="salaryminmaxcontainer">
+                        <input type="number" placeholder="min" />
+                        <p> - </p>
+                        <input type="number" placeholder="max" />
+                        <p>USD</p>
+                      </div>
+                      <input
+                        className="slider"
+                        type="range"
+                        min="0"
+                        max="100"
+                      />
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
