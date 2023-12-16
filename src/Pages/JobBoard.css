@@ -130,7 +130,7 @@
   border-top: 1px solid lightgrey;
   width: 95%;
   margin: 0 auto;
-  padding: 50px 0 50px;
+  padding: 20px 0 50px;
 }
 
 .linkContainer {
@@ -142,6 +142,118 @@
   background-color: green;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.dropdownandsearchFilters {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dropdownandsearchFilters label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 25%;
+  gap: 5px;
+}
+
+.dropdownandsearchFilters label p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.dropdownandsearchFilters label select {
+  padding: 8px 15px;
+  border-radius: 7px;
+}
+
+/* .search-label {
+  position: relative;
+} */
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 7px;
+  /* padding-right: 70px; */
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.search-container input {
+  /* width: 100%; */
+  border: none;
+  width: 90%;
+}
+
+.search-container input:focus-visible {
+  padding: 2px;
+  /* border: 1px solid lightgray; */
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Adjust the right value to position the search icon as desired */
+  transform: translateY(-50%);
+}
+
+.selectorfilters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* //////Job types////// */
+.jobType,
+.ExpLevel {
+  display: flex;
+  gap: 20px;
+}
+.jobType p,
+.ExpLevel p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.jobTypeoption,
+.ExpLeveloption {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  gap: 10px;
+}
+
+/* //////Exp level////// */
+
+.salaryrangecontainer {
+  display: flex;
+  gap: 10px;
+}
+
+.salaryrangecontainer p {
+  margin: 0;
+  font-weight: bold;
+}
+.salaryminmaxcontainer {
+  display: flex;
+  gap: 10px;
+}
+.salaryminmaxcontainer input {
+  width: 80px;
+}
+.slider {
+  width: 100%;
+}
+
+.Salaryinputscontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* //////////////////////Filter Section///////////////// */
