@@ -1,8 +1,17 @@
 import React from "react";
+import { useState } from "react";
 
 import "./Login.css";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
+
   return (
     <div className="login-page">
       <header className="login-header">
@@ -10,16 +19,18 @@ export default function Login() {
         <p className="login-subtitle">Sign in to access your account.</p>
       </header>
 
-      <div className="login-form-container">
+      <form onSubmit={handleSubmit} className="login-form-container">
         <label htmlFor="username" className="login-label">
-          Username:
+          Email:
         </label>
         <input
-          type="text"
-          id="username"
-          name="username"
+          type="email"
+          id="email"
+          name="email"
           className="login-input"
-          placeholder="Enter your username"
+          placeholder="Enter your email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
         />
 
         <label htmlFor="password" className="login-label">
@@ -31,12 +42,14 @@ export default function Login() {
           name="password"
           className="login-input"
           placeholder="Enter your password"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
 
         <button type="submit" className="login-button">
           Login
         </button>
-      </div>
+      </form>
 
       <p className="signup-link">
         Don't have an account?{" "}
