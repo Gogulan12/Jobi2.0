@@ -22,6 +22,10 @@ import Search from "./Pages/search/Search";
 
 import Create from "./Pages/create/Create";
 
+// Authentication
+import { useLogout } from "./hooks/useLogout";
+import { useAuthContext } from "./hooks/useAuthContext";
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -55,163 +59,171 @@ function App() {
     e.stopPropagation();
   };
 
+  const { logout } = useLogout();
+  const { user } = useAuthContext();
+  const { authIsReady } = useAuthContext();
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <div className="backgroundnavContainer">
-          <div className="navContainer">
-            <nav>
-              <NavLink exact to="/">
-                <img src={logo} alt="" />
-              </NavLink>
-              <button
-                className={`hamburger-button ${menuOpen ? "open" : ""}`}
-                onClick={(e) => {
-                  stopPropagation(e);
-                  toggleMenu();
-                }}
-              >
-                <FontAwesomeIcon icon={faBars} className="fa-bars" />
-              </button>
-            </nav>
-            <div className={`navigationLinks ${menuOpen ? "open" : ""}`}>
-              <div className="pagelinks">
-                <NavLink exact to="/" onClick={toggleMenu}>
-                  Home
+      {authIsReady && (
+        <BrowserRouter>
+          <div className="backgroundnavContainer">
+            <div className="navContainer">
+              <nav>
+                <NavLink exact to="/">
+                  <img src={logo} alt="" />
                 </NavLink>
-                <NavLink to="/jobboard" onClick={toggleMenu}>
-                  Job Board
-                </NavLink>
-                <NavLink to="/about" onClick={toggleMenu}>
-                  About
-                </NavLink>
-                <NavLink to="/contact" onClick={toggleMenu}>
-                  Contact
-                </NavLink>
-                {/* <div class="dropdown">
-                  <button class="dropbtn">
-                    <p>Pages</p>
-                    <i class="arrow down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <NavLink to="/">Link 1</NavLink>
-                    <NavLink to="/">Link 2</NavLink>
-                    <NavLink to="/">Link 3</NavLink>
-                  </div>
-                </div> */}
-                <div className="dropdown">
-                  <button
-                    className="dropbtn"
-                    onClick={(e) => {
-                      stopPropagation(e);
-                      toggleDropdown();
-                    }}
-                  >
-                    <p>Pages</p>
-                    <i className="arrow down"></i>
-                  </button>
-                  <div
-                    className={`dropdown-content ${
-                      isDropdownOpen ? "show" : ""
-                    }`}
-                  >
-                    <NavLink
-                      to="/pricing"
-                      onClick={() => {
+                <button
+                  className={`hamburger-button ${menuOpen ? "open" : ""}`}
+                  onClick={(e) => {
+                    stopPropagation(e);
+                    toggleMenu();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faBars} className="fa-bars" />
+                </button>
+              </nav>
+              <div className={`navigationLinks ${menuOpen ? "open" : ""}`}>
+                <div className="pagelinks">
+                  <NavLink exact to="/" onClick={toggleMenu}>
+                    Home
+                  </NavLink>
+                  <NavLink to="/jobboard" onClick={toggleMenu}>
+                    Job Board
+                  </NavLink>
+                  <NavLink to="/about" onClick={toggleMenu}>
+                    About
+                  </NavLink>
+                  <NavLink to="/contact" onClick={toggleMenu}>
+                    Contact
+                  </NavLink>
+                  <div className="dropdown">
+                    <button
+                      className="dropbtn"
+                      onClick={(e) => {
+                        stopPropagation(e);
                         toggleDropdown();
-                        toggleMenu();
                       }}
                     >
-                      Pricing
-                    </NavLink>
-                    <NavLink
-                      to="/blog"
-                      onClick={() => {
-                        toggleDropdown();
-                        toggleMenu();
-                      }}
+                      <p>Pages</p>
+                      <i className="arrow down"></i>
+                    </button>
+                    <div
+                      className={`dropdown-content ${
+                        isDropdownOpen ? "show" : ""
+                      }`}
                     >
-                      Blog
-                    </NavLink>
-                    <NavLink
-                      to="/error"
-                      onClick={() => {
-                        toggleDropdown();
-                        toggleMenu();
-                      }}
-                    >
-                      404 Error
-                    </NavLink>
-                    <NavLink
-                      to="/construction"
-                      onClick={() => {
-                        toggleDropdown();
-                        toggleMenu();
-                      }}
-                    >
-                      Construction
-                    </NavLink>
+                      <NavLink
+                        to="/pricing"
+                        onClick={() => {
+                          toggleDropdown();
+                          toggleMenu();
+                        }}
+                      >
+                        Pricing
+                      </NavLink>
+                      <NavLink
+                        to="/blog"
+                        onClick={() => {
+                          toggleDropdown();
+                          toggleMenu();
+                        }}
+                      >
+                        Blog
+                      </NavLink>
+                      <NavLink
+                        to="/error"
+                        onClick={() => {
+                          toggleDropdown();
+                          toggleMenu();
+                        }}
+                      >
+                        404 Error
+                      </NavLink>
+                      <NavLink
+                        to="/construction"
+                        onClick={() => {
+                          toggleDropdown();
+                          toggleMenu();
+                        }}
+                      >
+                        Construction
+                      </NavLink>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="accountlinks">
-                <NavLink to="/login" onClick={toggleMenu}>
-                  Login
-                </NavLink>
-                <NavLink
-                  to="/register"
-                  className="register"
-                  onClick={toggleMenu}
-                >
-                  Register
-                </NavLink>
+                <div className="accountlinks">
+                  {!user && (
+                    <>
+                      <NavLink to="/login" onClick={toggleMenu}>
+                        Login
+                      </NavLink>
+                      <NavLink
+                        to="/register"
+                        className="register"
+                        onClick={toggleMenu}
+                      >
+                        Register
+                      </NavLink>
+                    </>
+                  )}
+
+                  {user && (
+                    <>
+                      <p className="person">hello, {user.displayName}</p>
+
+                      <button className="btn" onClick={logout}>
+                        Logout
+                      </button>
+                    </>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route exact path="/jobboard">
-            <Jobboard />
-          </Route>
-          <Route path="/jobData/:id">
-            <JobDetail />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/error">
-            <Error404 />
-          </Route>
-          <Route path="/construction">
-            <UnderConstruction />
-          </Route>
-          <Route path="/pricing">
-            <Pricing />
-          </Route>
-          <Route path="/create">
-            <Create />
-          </Route>
-          <Route path="/search">
-            <Search />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route exact path="/jobboard">
+              <Jobboard />
+            </Route>
+            <Route path="/jobData/:id">
+              <JobDetail />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/error">
+              <Error404 />
+            </Route>
+            <Route path="/construction">
+              <UnderConstruction />
+            </Route>
+            <Route path="/pricing">
+              <Pricing />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route path="/search">
+              <Search />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      )}
     </div>
   );
 }
