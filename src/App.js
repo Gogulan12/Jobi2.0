@@ -1,6 +1,12 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  NavLink,
+  Redirect,
+} from "react-router-dom";
 import logo from "./Assets/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -25,6 +31,7 @@ import Create from "./Pages/create/Create";
 // Authentication
 import { useLogout } from "./hooks/useLogout";
 import { useAuthContext } from "./hooks/useAuthContext";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -96,6 +103,9 @@ function App() {
                   </NavLink>
                   <NavLink to="/contact" onClick={toggleMenu}>
                     Contact
+                  </NavLink>
+                  <NavLink to="/dashboard" onClick={toggleMenu}>
+                    Dashboard
                   </NavLink>
                   <div className="dropdown">
                     <button
@@ -198,10 +208,13 @@ function App() {
               <JobDetail />
             </Route>
             <Route path="/login">
-              <Login />
+              {user && <Redirect to="/dashboard" />}
+              {!user && <Login />}
             </Route>
             <Route path="/register">
-              <Register />
+              {user && <Redirect to="/dashboard" />}
+
+              {!user && <Register />}
             </Route>
             <Route path="/blog">
               <Blog />
@@ -220,6 +233,10 @@ function App() {
             </Route>
             <Route path="/search">
               <Search />
+            </Route>
+            <Route path="/dashboard">
+              {!user && <Redirect to="/login" />}
+              {user && <Dashboard />}
             </Route>
           </Switch>
         </BrowserRouter>
